@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+      
+
+    </style>
+</head>
+<body>
+
+<header>
+
+  <!--navigation-->
+    <nav>
+    <div class="logo">
+        <img src="images/imglogo.jpeg" alt="country" height="5%" width="5%" />
+    </div>
+
+    <div class="menu">
+        <h1><i><b>PlaylistPlanet</i></b></h1>
+        </div>
+        <div class="menu2">
+        <a href="#Home">Home</a
+          >
+        <a href="#My Playlist">My Playlist</a>
+        <a href="#Top-Artists">Top Artists</a>
+        <a href="#About">About</a>		
+    </div>
+    <div class="sign-up">
+      <a href="#">Sign-up</a>
+    </div>
+
+    <h2 id="Home"></h2>
+    <section class="h-txt">
+      
+      <h2>Welcome to the PlaylistPlanet!</h2>
+      <span><b>Where words fail music speak...</b></span>
+
+      <!--end of the navigation-->
+
+</section>
+    </nav>
+
+
+           <!--search bar-->
+
+            <div class="container">
+               <div class="search_wrap search_wrap">
+                   <div class="search_box">
+                   <input type="text" class="input"  placeholder=" Search songs here..." >
+                   <div class="btn btn_common">
+                         Search
+                   </div>
+                 </div>
+               </div>
+            </div>
+            <!--end of the search bar-->
+            
+            <!--master player-->
+            <div class="master_play"> 
+              <div class="wave">
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+              </div>
+              
+             <div class="song_play">
+              <div class="icon">
+                  <img src="images/back.png" alt="" id="play_back" onclick="play_previous()">
+                  <img src="images/play.png" alt="1" id="play" onclick="play()">
+                  <img src="images/next.png" alt="image" id="next" onclick="play_next()">
+              </div>
+            </div>
+              <span id="currentStart">0:00</span>
+              <div class="bar">
+                <input type="range" value="0" id="progress">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+              </div>
+              <span id="currentEnd">0:30</span>
+             <div class="add-songs">
+              <a href="#">Add songs</a>
+           </div>
+           <div class="del-songs">
+            <a href="#">Delete songs</a>
+           </div>
+
+           <!--end of the master player-->
+  </header>
+
+           <!--my playlist-->
+
+           <h2 id="My Playlist"></h2>
+    
+           <div class="music_grid">
+              <div class="music_card">
+                 <img id="image" src="images/img1.jpg" alt="album" height="50%" width="50%" />
+               <h2 class="music-name">Amplifier</h2>
+               <div class="card_content"> 
+               <audio controls="" id="song">    
+                  <source src="musics/Amplifier_~_Imran_Khan_-_Slowed___Reverbed____Bass_Boosted___Lofi_Mix🥀__proxylofi!(256k).mp3" type="audio/mp3"/>
+               </audio>
+                </div>
+            </div>
+             
+           <div class="music_card">
+              <img id="image" src="images/img2.jpg" alt="album" height="50%" width="50%" />
+             <h2 class="music-name">AUR_-_TU_HAI_KAHAN_</h2>
+                <div class="card_content"> 
+                <audio controls="" id="song">    
+                   <source src="musics/AUR_-_TU_HAI_KAHAN_-_Raffey_-_Usama_-_Ahad__Official_Music_Video_(256k).mp3" type="audio/mp3" />
+                </audio>
+               </div>
+            </div>
+
+         <div class="music_card">
+            <img id="image" src="images/img3.jpg" alt="album" height="50%" width="50%" />
+            <h2 class="music-name">Hass_Hass</h2>
+            <div class="card_content"> 
+              <audio controls="" id="song">    
+                   <source src="musics/Hass_Hass__Official_Video__Diljit_X_Sia(256k).mp3" type="audio/mp3"/>
+              </audio>
+             </div>
+          </div>
+         
+            <div class="music_card">
+              <img id="image" src="images/img4.jpg" alt="album" height="50%" width="50%" />
+              <h2 class="music-name">Heeriye</h2>
+              <div class="card_content">
+                 <audio controls=""  id="song">    
+                     <source src="musics/Heeriye__Official_Video__Jasleen_Royal_ft_Arijit_Singh__Dulquer_Salmaan__Aditya_Sharma__Taani_Tanvir(256k).mp3" type="audio/mp3"/>
+                  </audio>
+               </div>
+             </div>
+
+            <div class="music_card">
+               <img id="image" src="images/img5.jpg" alt="album" height="50%" width="50%" />
+               <h2 class="music-name">Justin_Bieber_Baby</h2>
+               <div class="card_content"> 
+                 <audio controls=""  id="song">    
+                      <source src="musics/Justin_Bieber_-_Baby___lyrics__(256k).mp3" type="audio/mp3"/>
+                 </audio>
+                </div>
+            </div>
+
+            <div class="music_card">
+              <img id="image" src="images/img6.jpg" alt="album" height="50%" width="50%" />
+              <h2 class="music-name">Sirf_Tu</h2>
+              <div class="card_content">
+              <audio controls="" id="song">
+                  <source src="musics/Sirf_Tu_-_Stebin_Ben_&_Heli_Daruwala__Raees_&_ZAIN_-_Sam_,Danish_S_,_Liaqat_J__Zee_Music_Originals(256k).mp3" type="audio/mp3"/>
+              </audio>
+             </div>
+            </div>
+
+            <div class="music_card">
+               <img id="image" src="images/img7.jpg" alt="album" height="50%" width="50%" />
+               <h2 class="music-name">_Jug_Jug_Jeeve_</h2>
+               <div class="card_content">
+                 <audio controls="" id="song">   
+                     <source src="musics/Jug_Jug_Jeeve__Full_Video____Shiddat___Diana_P,_Mohit_R___Sachet_T_Parampara_T__Sachin_-_Jigar(256k).mp3" type="audio/mp3"/>
+                 </audio>
+               </div>
+            </div>
+
+           <div class="music_card">
+              <img id="image" src="images/img8.jpg" alt="album" height="50%" width="50%" />
+              <h2 class="music-name">Let_Me_Down_Slowly</h2>
+              <div class="card_content">
+               <audio controls="" id="song">   
+                 <source src="musics/Alec_Benjamin_-_Let_Me_Down_Slowly_[Official_Music_Video](256k).mp3" type="audio/mp3"/>
+               </audio>
+             </div>
+          </div>
+
+          <div class="music_card">
+            <img id="image" src="images/img9.jpeg" alt="album" height="50%" width="50%" />
+            <h2 class="music-name">Love_You_Zindagi</h2>
+            <div class="card_content">
+              <audio controls="" id="song">    
+                <source src="musics/Love_You_Zindagi_Full_Video_-_Dear_Zindagi_Alia_Bhatt_Shah_Rukh_Khan_Jasleen_Royal_Amit_T(256k).mp3" type="audio/mp3"/>
+              </audio>
+           </div>
+         </div>
+
+         <div class="music_card">
+           <img id="image" src="images/img10.jpg" alt="album" height="50%" width="50%" />
+           <h2 class="music-name">Jaavedaan_Hai</h2>
+           <div class="card_content"> 
+            <audio controls="" id="song">    
+              <source src="musics/Jaavedaan_Hai_Lyrical_Video___1920_Evil_Returns___KK,_Suzanne_D_Mello(256k).mp3" type="audio/mp3"/>
+           </audio>
+           </div>
+         </div>
+
+         <div class="music_card">
+           <img id="image" src="images/img11.jpg" alt="album" height="50%" width="50%" />
+           <h2 class="music-name">Chaleya</h2>
+           <div class="card_content"> 
+            <audio controls="" id="song">    
+              <source src="musics/JAWAN__Chaleya__Hindi____Shah_Rukh_Khan___Nayanthara___Atlee___Anirudh___Arijit_S,_Shilpa_R___Kumaar(256k).mp3" type="audio/mp3"/>
+             </audio>
+           </div>
+         </div>
+     
+   
+   
+        <div class="music_card">
+          <img id="image" src="images/img12.jpg" alt="album" height="50%" width="50%" />
+          <h2 class="music-name">Beautiful</h2>
+          <div class="card_content"> 
+           <audio controls="" id="song">    
+            <source src="musics/Beautiful_-_Full_Video___Goodbye___Amitabh_Bachchan,_Rashmika_Mandanna,_Neena_G___Amit_T,_Swanand_K(256k).mp3" type="audio/mp3"/>
+          </audio>
+         </div>
+       </div>
+   
+        <div class="music_card">
+          <img id="image" src="images/img13.jpg" alt="album" height="50%" width="50%" />
+          <h2 class="music-name">Best_Times</h2>
+          <div class="card_content"> 
+           <audio controls="" id="song">    
+             <source src="musics/Best_Times___Bobby___Home_of_Lyrics(256k).mp3" type="audio/mp3"/>
+           </audio>
+         </div>
+       </div>
+   
+       <div class="music_card">
+         <img id="image" src="images/img14.jpg" alt="album" height="50%" width="50%" />
+         <h2 class="music-name">Love_Me_Like_You_Do</h2>
+         <div class="card_content"> 
+          <audio controls="" id="song" >    
+            <source src="musics/Best_Times___Bobby___Home_of_Lyrics(256k).mp3" type="audio/mp3"/>
+          </audio>
+         </div>
+       </div>
+   
+      <div class="music_card">
+        <img id="image" src="images/img15.jpg" alt="album" height="50%" width="50%" />
+        <h2 class="music-name">Fakira</h2>
+        <div class="card_content"> 
+         <audio controls="" id="song">    
+           <source src="musics/Fakira_-_Lyrical__Student_Of_The_Year_2___Tiger_Shroff,_Tara__Ananya__Vishal___Shekhar_Sanam___Neeti(256k).mp3" type="audio/mp3"/>
+         </audio>
+       </div>
+     </div>
+   
+      <div class="music_card">
+        <img id="image" src="images/img16.jpg" alt="album" height="50%" width="50%" />
+        <h2 class="music-name">Raat_Bhar</h2>
+        <div class="card_content"> 
+          <audio controls="" id="song">    
+           <source src="musics/Heropanti___Raat_Bhar_Full_Song_with_Lyrics___Tiger_Shroff___Arijit_Singh,_Shreya_Ghoshal(256k).mp3" type="audio/mp3"/>
+          </audio>
+       </div>
+      </div>
+   
+      <div class="music_card">
+        <img id="image" src="images/img17.jpg" alt="album" height="50%" width="50%" />
+        <h2 class="music-name">_Ilahi_</h2>
+        <div class="card_content"> 
+          <audio controls="" id="song">    
+           <source src="musics/Ilahi_Full_Video_Song___Yeh_Jawaani_Hai_Deewani___Ranbir_Kapoor,_Deepika_Padukone___Pritam(256k).mp3" type="audio/mp3"/>
+          </audio>
+        </div>
+      </div>
+   
+      <div class="music_card">
+        <img id="image" src="images/img18.jpg" alt="album" height="50%" width="50%" />
+        <h2 class="music-name">Kaho_na_Kaho</h2>
+        <div class="card_content"> 
+         <audio controls="" id="song">    
+          <source src="musics/Kaho_na_Kaho__Arabic_Version_(256k).mp3" type="audio/mp3"/>
+         </audio>
+        </div>
+     </div>
+   
+      <div class="music_card">
+       <img id="image" src="images/img19.jpg" alt="album" height="50%" width="50%" />
+       <h2 class="music-name">Desi_Kalakaar</h2>
+       <div class="card_content"> 
+         <audio controls="" id="song">    
+           <source src="musics/LYRICAL__Desi_Kalakaar_Full_Song_with_LYRICS___Yo_Yo_Honey_Singh___Sonakshi_Sinha(256k).mp3" type="audio/mp3"/>
+         </audio>
+       </div>
+     </div>
+   
+      <div class="music_card">
+        <img id="image" src="images/img20.jpg" alt="album" height="50%" width="50%" />
+        <h2 class="music-name">_Kaise_Hua_</h2>
+        <div class="card_content"> 
+          <audio controls="" id="song">    
+            <source src="musics/LYRICAL__Kaise_Hua___Kabir_Singh___Shahid_K,_Kiara_A,_Sandeep_V___Vishal_Mishra,_Manoj_Muntashir(256k).mp3" type="audio/mp3"/>
+          </audio>
+        </div>
+     </div>
+   
+      <div class="music_card">
+       <img id="image" src="images/img21.jpg" alt="album" height="50%" width="50%" />
+       <h2 class="music-name">Teri_Jhuki_Nazar</h2>
+       <div class="card_content"> 
+         <audio controls="" id="song">    
+           <source src="musics/Pritam,_Shafqat_Amanat_Ali_-_Teri_Jhuki_Nazar__From__Murder_3__(256k).mp3" type="audio/mp3"/>
+         </audio>
+       </div>
+      </div>
+   
+      <div class="music_card">
+       <img id="image" src="images/img22.jpg" alt="album" height="50%" width="50%" />
+       <h2 class="music-name">One_Love</h2>
+       <div class="card_content"> 
+         <audio controls="" id="song">    
+           <source src="musics/Shubh_-_One_Love__Official_Audio_(256k).mp3" type="audio/mp3"/>
+         </audio>
+       </div>
+     </div>
+   
+      <div class="music_card">
+        <img id="image" src="images/img23.jpg" alt="album" height="50%" width="50%" />
+        <h2 class="music-name">Sia_-_Unstoppable</h2>
+        <div class="card_content"> 
+          <audio controls="" id="song">    
+           <source src="musics/Sia_-_Unstoppable__Official_Video_-_Live_from_the_Nostalgic_For_The_Present_Tour_(256k).mp3" type="audio/mp3"/>
+         </audio>
+        </div>
+      </div>
+   
+      <div class="music_card">
+        <img id="image" src="images/img24.jpg" alt="album" height="50%" width="50%" />
+        <h2 class="music-name">Tujh_Mein_Rab_Dikhta_Hai</h2>
+        <div class="card_content"> 
+          <audio controls="" id="song">    
+            <source src="musics/Tujh_Mein_Rab_Dikhta_Hai_[Slowed___Reverb]_-_Roop_Kumar___N_I_K_H_I_L(256k).mp3" type="audio/mp3"/>
+          </audio>
+        </div>
+      </div>
+ </div>
+ <!--end of the my playlist-->
+
+       <!--top artist-->
+      <div class="top-artist container">
+       <h2 id="Top-Artists"></h2>
+       <div class="top-artist">
+       <h1><b>Top-Artists</b></h1>
+         <img src="images/imga.jpg" alt="album" height="20%" width="20%" />
+         <img src="images/imgb.jpg" alt="album" height="20%" width="20%" />
+         <img src="images/imgc.jpg" alt="album" height="20%" width="20%" />
+         <img src="images/imgd.jpg" alt="album" height="20%" width="20%" />
+         <img src="images/imge.jpg" alt="album" height="20%" width="20%" />
+         <img src="images/imgf.jpg" alt="album" height="20%" width="20%" />
+         <img src="images/imgg.jpg" alt="album" height="20%" width="20%" />
+      </div>
+
+       <h2 id="About"></h2>
+       <div class="about">
+        <h1>About</h1>
+        <br>
+        <p>
+         With PlaylistPlanet, it’s easy to find the right music for every moment on your phone, your computer, 
+        your tablet and more. There are millions of tracks and episodes on PlaylistPlanet. So whether you’re behind the wheel, 
+        working out, partying or relaxing, the right music or podcast is always at your fingertips. Choose what you want to listen to,
+        or let PlaylistPlanet surprise you.  You can also browse through the collections of friends, artists, and celebrities, 
+        or create a radio station and just sit back. Soundtrack your life with PlaylistPlanet . Listen for free.
+        </p>
+      </div>
+</div>
+<!--end of the top-artist-->
+
+  <!--footer-->
+
+ <footer class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy & policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Cookies Policy</a></li>
+            <li><a href="#">Songs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Communities</h4>
+          <ul>
+            <li><a href="#">For Artist</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Advertising</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Web PLayers</a></li>
+            <li><a href="#">Free Songs</a></li>
+          </ul>
+        </div>
+          <div class="footer-col">
+                          <h4>Contact</h4>
+                             <ul>
+                             <li><a href="#"> Address:15C,prayagraj</a></li>
+                             <li><a href="#"> Phone:+91993654367854</a></li>
+
+                          </ul>
+                         </div>
+
+                         <div class="footer-col">
+                          <h4>Follow us</h4>
+                              <div class="social-icons">
+                          <img src="images/insta.jpg" alt="album" height="10%" width="10%" />
+                          <img src="images/linkedin.png" alt="album" height="10%" width="10%" />
+                          <img src="images/github.webp" alt="album" height="10%" width="10%" />
+                          <img src="images/fb.jpg" alt="album" height="10%" width="10%" />
+                          <img src="images/twitter.jpg" alt="album" height="10%" width="10%" />
+                      </div>
+         
+    </div>
+  </footer>
+  <!--end of the footer-->
+
+ 
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+ 
